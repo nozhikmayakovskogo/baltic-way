@@ -1,7 +1,7 @@
 <template>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
 		<div class="container">
-			<a class="navbar-brand" href="/">«Baltic Way»</a>
+			<NuxtLink class="navbar-brand" to="/">«Baltic Way»</NuxtLink>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -20,12 +20,22 @@
 						v-for="(item, index) in links"
 						:key="index"
 					>
-						<a class="nav-link text-white" :href="item.url">
+						<NuxtLink class="nav-link text-white" :to="item.url">
 							{{ item.name }}
-						</a>
+						</NuxtLink>
 					</li>
 				</ul>
 			</div>
+			<ul class="navbar-nav d-flex w-auto">
+				<li class="nav-item me-3 me-lg-0">
+					<a
+						class="nav-link text-white text-nowrap"
+						href="tel:+79967771620"
+					>
+						+7 996-777-16-20
+					</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
 </template>

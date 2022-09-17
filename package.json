@@ -1,4 +1,7 @@
 {
+  "name": "baltic-way",
+  "version": "1.0.0",
+  "description": "Nuxt App",
   "private": true,
   "scripts": {
     "build": "nuxt build",

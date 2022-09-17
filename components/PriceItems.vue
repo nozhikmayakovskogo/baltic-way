@@ -1,6 +1,5 @@
 <template>
-	<section :prices="prices">
-		<h4 class="text-center">Наличие мест</h4>
+	<div class="page mb-5">
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -11,24 +10,19 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr
-					v-for="price in prices"
-					:key="price.id"
-					@click="goTo('/prices/' + price.id)"
-				>
+				<tr v-for="price in prices" :key="price.id">
 					<th scope="row">{{ price.id }}</th>
 					<td>{{ price.date }}</td>
-					<td>{{ price.city }}</td>
+					<td>
+						<NuxtLink :to="'/prices/' + price.id">
+							{{ price.city }}
+						</NuxtLink>
+					</td>
 					<td>{{ price.seats }}</td>
 				</tr>
 			</tbody>
 		</table>
-		<div class="text-center">
-			<a class="btn btn-danger mb-5" href="/prices" role="button"
-				>Показать все</a
-			>
-		</div>
-	</section>
+	</div>
 </template>
 <script setup>
 const props = defineProps({

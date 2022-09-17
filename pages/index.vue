@@ -1,6 +1,5 @@
 <template>
-	<Header :links="menuLinks" />
-	<div class="container">
+	<div class="page mb-5">
 		<Carousel />
 		<br />
 		<h1>Санкт-Петербург - Хельсинки</h1>
@@ -80,7 +79,15 @@
 			требований, соседствуют с самыми красивейшими озерами пригородов
 			Хельсинки.
 		</p>
-		<PriceItems :prices="prices" />
+		<section>
+			<h4 class="text-center">Наличие мест</h4>
+			<PriceItems :prices="pricesSpliced" />
+			<div class="text-center">
+				<a class="btn btn-danger mb-5" href="/prices" role="button">
+					Показать все
+				</a>
+			</div>
+		</section>
 		<h4 class="text-center">Расписание и цены</h4>
 		<table class="table table-striped">
 			<tbody>
@@ -92,35 +99,9 @@
 				</tr>
 			</tbody>
 		</table>
-		<div class="text-center">
-			<a class="btn btn-danger mb-5" href="/prices" role="button"
-				>Показать все</a
-			>
-		</div>
 	</div>
-	<Footer :links="menuLinks" />
 </template>
 <script setup>
-import { useRouter } from 'vue-router'
 import prices from '@/data/prices.json'
-const router = useRouter()
-console.log(prices)
-//document.title = 'Балтийский путь'
-const menuLinks = [
-	{ url: '/', name: 'Главная' },
-	{ url: '/auto', name: 'Автопарк' },
-	{ url: '/prices', name: 'Маршруты/Цены' },
-	{ url: '/contacts', name: 'Контакты' },
-]
-function goTo(url) {
-	this.router.push(url)
-	//alert(url)
-}
+const pricesSpliced = [...prices].splice(0, 10)
 </script>
-<style>
-@import url('/assets/css/mdb.min.css');
-.bg-danger {
-	background-color: #ad1a1a !important;
-}
-/** 340 */
-</style>

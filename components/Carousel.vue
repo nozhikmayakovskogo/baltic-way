@@ -24,10 +24,9 @@
 					alt="Sunset Over the City"
 				/>
 				<div class="carousel-caption d-none d-md-block">
-					<h5>First slide label</h5>
+					<h5>Автобусы в Финляндию</h5>
 					<p>
-						Nulla vitae elit libero, a pharetra augue mollis
-						interdum.
+						Расписание рейсов можно посмотреть в форме бронирования
 					</p>
 				</div>
 			</div>

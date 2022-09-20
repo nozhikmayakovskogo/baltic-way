@@ -20,7 +20,12 @@
 						v-for="(item, index) in links"
 						:key="index"
 					>
-						<NuxtLink class="nav-link text-white" :to="item.url">
+						<NuxtLink
+							exact-active-class="active"
+							active-class="active"
+							class="nav-link text-white"
+							:to="item.url"
+						>
 							{{ item.name }}
 						</NuxtLink>
 					</li>

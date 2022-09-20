@@ -1,0 +1,1 @@
+//const carousel = new mdb.Carousel('#mainCarousel')

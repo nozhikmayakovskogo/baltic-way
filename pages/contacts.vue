@@ -1,16 +1,30 @@
 <template>
 	<div class="page mb-5">
+		<Html lang="ru">
+			<Head>
+				<Title>{{ title }} | Baltic Way </Title>
+				<Meta
+					name="description"
+					content="Автобусные поездки в любые города Финляндии"
+				/>
+				<Link
+					rel="preload"
+					href="@/assets/img/sad-face-2692.svg"
+					as="script"
+				/>
+			</Head>
+		</Html>
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item">
 					<NuxtLink to="/">Главная</NuxtLink>
 				</li>
 				<li class="breadcrumb-item active" aria-current="page">
-					Контактная информация
+					{{ title }}
 				</li>
 			</ol>
 		</nav>
-		<h1>Контактная информация</h1>
+		<h1>{{ title }}</h1>
 		<h3>Пассажирские перевозки в Финляндию из Петербурга</h3>
 		<p>
 			Компания Baltic Way занимается пассажирскими перевозками в
@@ -29,3 +43,6 @@
 		</p>
 	</div>
 </template>
+<script setup>
+const title = 'Контактная информация'
+</script>

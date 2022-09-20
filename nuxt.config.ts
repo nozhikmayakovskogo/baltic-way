@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
+    title: 'Nuxt App',
     meta: {
         link: [
             {
@@ -11,6 +12,10 @@ export default defineNuxtConfig({
         script: [
             {
                 src: '/assets/js/mdb.min.js',
+                defer: true 
+            },
+            {
+                src: '/assets/js/main.js',
                 defer: true 
             }
         ]

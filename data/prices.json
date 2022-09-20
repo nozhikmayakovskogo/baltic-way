@@ -1,14 +1,24 @@
 [
     {
         "id": 1,
-        "date": "09.09.2022",
-        "city": "Хельсинки",
+        "slug": "sankt-peterburg-helsinki",
+        "departure_city": "Санкт-Петербург",
+        "arrival_city": "Хельсинки",
+        "departure_time": "09.09.2022 08:00",
+        "arrival_time": "09.09.2022 17:00",
+        "travel_time": "~7 часов",
+        "cost": 5000,
         "seats": 12
     },
     {
-        "id": 2,
-        "date": "09.09.2022",
-        "city": "Хельсинки",
+        "id": 1,
+        "slug": "helsinki-sankt-peterburg",
+        "departure_city": "Хельсинки",
+        "arrival_city": "Санкт-Петербург",
+        "departure_time": "09.09.2022 18:00",
+        "arrival_time": "09.09.2022 23:00",
+        "travel_time": "~7 часов",
+        "cost": 5000,
         "seats": 12
     }
 ]

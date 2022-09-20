@@ -1,9 +1,11 @@
 <template>
 	<div>
-		<Header :links="menuLinks" />
-		<div class="container">
-			<slot></slot>
-		</div>
+		<main>
+			<Header :links="menuLinks" />
+			<div class="container">
+				<slot />
+			</div>
+		</main>
 		<Footer :links="menuLinks" />
 	</div>
 </template>

@@ -12,5 +12,9 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.9"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "bootstrap": "^5.2.1"
   }
 }

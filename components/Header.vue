@@ -35,9 +35,9 @@
 				<li class="nav-item me-3 me-lg-0">
 					<a
 						class="nav-link text-white text-nowrap"
-						href="tel:+79967771620"
+						href="tel:+79062731515"
 					>
-						+7 996-777-16-20
+						+7(906)273-15-15
 					</a>
 				</li>
 			</ul>

@@ -1,5 +1,5 @@
 <template>
-	<div class="page mb-5">
+	<div class="page mb-4">
 		<nav aria-label="breadcrumb" v-if="price">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item">
@@ -13,7 +13,7 @@
 				</li>
 			</ol>
 		</nav>
-		<div v-if="price">
+		<div class="content" v-if="price">
 			<div class="col">
 				<h1>{{ title }}</h1>
 			</div>
@@ -21,8 +21,8 @@
 				<thead>
 					<tr>
 						<th scope="col">Рейс</th>
-						<th scope="col">Время отправления и прибытия</th>
-						<th scope="col">Время в пути</th>
+						<th scope="col">Дата</th>
+						<th scope="col">Время отправления</th>
 						<th scope="col">Стоимость</th>
 						<th scope="col">Мест</th>
 					</tr>
@@ -34,14 +34,19 @@
 							{{ price.arrival_city }}
 						</th>
 						<td>
-							{{ price.departure_time }} -
-							{{ price.arrival_time }}
+							{{ new Date().toLocaleDateString() }}
 						</td>
 						<td>
 							{{ price.travel_time }}
 						</td>
 						<td>
-							{{ price.cost }}
+							{{
+								new Intl.NumberFormat('ru-RU', {
+									maximumSignificantDigits: 2,
+									style: 'currency',
+									currency: 'RUB',
+								}).format(price.cost)
+							}}
 						</td>
 						<td>{{ price.seats }}</td>
 					</tr>
@@ -49,19 +54,26 @@
 			</table>
 			<p>В расписании указано местное время</p>
 			<p>
-				Cтоимость проезда от 2800 рублей, актуальную стоимость уточняйте
-				по телефону +7 996-777-16-20
+				Cтоимость проезда 7000 рублей, актуальную стоимость уточняйте по
+				телефону +7(906)273-15-15
 			</p>
 			<p>
-				Услуга доставки до адреса предоставляется за дополнительную
-				плату. Пожалуйста, уточняйте стоимость услуги и маршрут
-				следования у наших операторов.
+				Отправление автобуса, микроавтобуса от станции метро "Черная
+				Речка" утром и вечером. Время отправления согласовывается с
+				оператором.
 			</p>
 
 			<p>
-				Без учёта прохождения границы. За задержки на границе компания
-				ответственности не несёт.
+				Легковой автомобиль VIP класса подаётся к парадной каждого
+				клиента.
 			</p>
+			<div class="text-center">
+				<img
+					style="max-width: 60%"
+					src="@/assets/img/photo_2022-10-19_10-55-41.jpg"
+					alt=""
+				/>
+			</div>
 		</div>
 
 		<NuxtLayout name="error" v-else>

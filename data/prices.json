@@ -6,19 +6,85 @@
         "arrival_city": "Хельсинки",
         "departure_time": "09.09.2022 08:00",
         "arrival_time": "09.09.2022 17:00",
-        "travel_time": "~7 часов",
-        "cost": 5000,
-        "seats": 12
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
     },
     {
-        "id": 1,
+        "id": 2,
+        "slug": "sankt-peterburg-tampere",
+        "departure_city": "Санкт-Петербург",
+        "arrival_city": "Тампере",
+        "departure_time": "09.09.2022 18:00",
+        "arrival_time": "09.09.2022 23:00",
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
+    },
+    {
+        "id": 3,
+        "slug": "sankt-peterburg-turku",
+        "departure_city": "Санкт-Петербург",
+        "arrival_city": "Турку",
+        "departure_time": "09.09.2022 18:00",
+        "arrival_time": "09.09.2022 23:00",
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
+    },
+    {
+        "id": 4,
+        "slug": "sankt-peterburg-lappeenranta",
+        "departure_city": "Санкт-Петербург",
+        "arrival_city": "Лаппеенранта",
+        "departure_time": "09.09.2022 18:00",
+        "arrival_time": "09.09.2022 23:00",
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
+    },
+    {
+        "id": 5,
         "slug": "helsinki-sankt-peterburg",
         "departure_city": "Хельсинки",
         "arrival_city": "Санкт-Петербург",
+        "departure_time": "09.09.2022 08:00",
+        "arrival_time": "09.09.2022 17:00",
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
+    },
+    {
+        "id": 6,
+        "slug": "tampere-sankt-peterburg",
+        "departure_city": "Тампере",
+        "arrival_city": "Санкт-Петербург",
         "departure_time": "09.09.2022 18:00",
         "arrival_time": "09.09.2022 23:00",
-        "travel_time": "~7 часов",
-        "cost": 5000,
-        "seats": 12
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
+    },
+    {
+        "id": 7,
+        "slug": "turku-sankt-peterburg",
+        "departure_city": "Турку",
+        "arrival_city": "Санкт-Петербург",
+        "departure_time": "09.09.2022 18:00",
+        "arrival_time": "09.09.2022 23:00",
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
+    },
+    {
+        "id": 8,
+        "slug": "lappeenranta-sankt-peterburg",
+        "departure_city": "Лаппеенранта",
+        "arrival_city": "Санкт-Петербург",
+        "departure_time": "09.09.2022 18:00",
+        "arrival_time": "09.09.2022 23:00",
+        "travel_time": "утро/вечер",
+        "cost": 7000,
+        "seats": "не ограничено"
     }
 ]

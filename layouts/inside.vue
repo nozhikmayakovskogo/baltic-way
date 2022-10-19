@@ -26,4 +26,7 @@ body {
 .btn-danger {
 	background-color: #ad1a1a;
 }
+.page {
+	background: white;
+}
 </style>

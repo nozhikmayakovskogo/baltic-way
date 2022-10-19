@@ -4,8 +4,8 @@
 			<thead>
 				<tr>
 					<th scope="col">Рейс</th>
-					<th scope="col">Время отправления и прибытия</th>
-					<th scope="col">Время в пути</th>
+					<th scope="col">Дата</th>
+					<th scope="col">Время отправления</th>
 					<th scope="col">Стоимость</th>
 					<th scope="col">Мест</th>
 				</tr>
@@ -19,13 +19,19 @@
 						</NuxtLink>
 					</th>
 					<td>
-						{{ price.departure_time }} - {{ price.arrival_time }}
+						{{ new Date().toLocaleDateString() }}
 					</td>
 					<td>
 						{{ price.travel_time }}
 					</td>
 					<td>
-						{{ price.cost }}
+						{{
+							new Intl.NumberFormat('ru-RU', {
+								maximumSignificantDigits: 2,
+								style: 'currency',
+								currency: 'RUB',
+							}).format(price.cost)
+						}}
 					</td>
 					<td>{{ price.seats }}</td>
 				</tr>

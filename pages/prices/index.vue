@@ -1,5 +1,5 @@
 <template>
-	<div class="page mb-5">
+	<div class="page mb-4">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item">
@@ -10,8 +10,9 @@
 				</li>
 			</ol>
 		</nav>
-		<h1>{{ title }}</h1>
-		<!-- <form>
+		<div class="content">
+			<h1>{{ title }}</h1>
+			<!-- <form>
 			<div class="row">
 				<div class="form-outline col-2">
 					<label for="departureCity">Город прибытия</label>
@@ -28,7 +29,8 @@
 				</div>
 			</div>
 		</form> -->
-		<PriceItems :prices="prices" v-if="prices" />
+			<PriceItems :prices="prices" v-if="prices" />
+		</div>
 	</div>
 </template>
 <script>
